@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Session enregistrée</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: #0b0c0e;
+    color: #dedfe2;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+.topbar {
+    height: 54px;
+    border-bottom: 1px solid #292b2f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    color: #92959b;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.brand {
+    color: #e8e9eb;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.status {
+    color: #c6a36a;
+}
+
+main {
+    max-width: 760px;
+    margin: 110px auto 70px;
+    padding: 0 28px;
+}
+
+.label {
+    color: #c6a36a;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+
+h1 {
+    font-size: clamp(30px, 5vw, 46px);
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    line-height: 1.15;
+    margin: 0 0 22px;
+}
+
+.description {
+    color: #92959b;
+    line-height: 1.8;
+    font-size: 14px;
+    max-width: 560px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #292b2f;
+    margin: 38px 0;
+}
+
+.section-title {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: #858991;
+    margin-bottom: 20px;
+}
+
+.entry {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 17px 0;
+    border-bottom: 1px solid #222428;
+    font-size: 13px;
+}
+
+.key { color: #898d94; }
+.value { color: #dedfe2; text-align: right; }
+.warning { color: #c6a36a; }
+
+.notice {
+    margin-top: 36px;
+    padding: 18px 20px;
+    border: 1px solid #34302a;
+    background: #121210;
+    color: #b4b0a8;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+footer {
+    margin-top: 65px;
+    color: #62656b;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+@media (max-width: 500px) {
+    main { margin-top: 70px; }
+    .entry { font-size: 12px; }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+    <div class="brand">SYS / TRACE</div>
+    <div class="status">● SESSION ACTIVE</div>
+</header>
+
+<main>
+    <div class="label">Événement système · Notice 0841</div>
+
+    <h1> Données récupérées</h1></h1>
+
+    <p class="description">
+486E6DE06EB55BF265E8069847493519    </p>
+
+    <hr>
+
+    <div class="section-title">RÉSUMÉ DE SESSION</div>
+
+    <div class="entry">
+        <span class="key">Référence</span>
+        <span class="value">DEMO-0841-A</span>
+    </div>
+
+    <div class="entry">
+        <span class="key">État de la session</span>
+        <span class="value warning">À examiner</span>
+    </div>
+
+    <div class="entry">
+        <span class="key">Informations du navigateur</span>
+        <span class="value">Accès illimité</span>
+    </div>
+
+    <div class="entry">
+        <span class="key">Accès aux fichiers personnels</span>
+        <span class="value">NF265E806 - Données récupérées</span>
+    </div>
+
+    <div class="entry">
+        <span class="key">Transmission de données privées</span>
+        <span class="value">Effectuée</span>
+    </div>
+
+    <div class="notice">
+        <strong>Information</strong><br>
+        Cette interface est une démonstration de sensibilisation
+        à la cybersécurité. Les références affichées sont fictives.
+        Aucune donnée personnelle n'est collectée ou transmise.
+    </div>
+
+    <footer>
+        SYS / TRACE — Interface de démonstration<br>
+        Session locale · Mode présentation
+    </footer>
+</main>
+
+</body>
+</html>
